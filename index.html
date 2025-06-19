@@ -1,134 +1,193 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Configurações básicas -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mato Grosso - Celeiro do Mundo e Potência do desenvolvimento do Brasil</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mato Grosso - Riqueza Natural, Cultural e Econômica</title>
 
-    <!-- Bibliotecas externas -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Estilo com gradientes e ajustes -->
-    <style>
-        body {
-            background: linear-gradient(135deg, #e0f7fa, #c8e6c9);
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <style>
+    body {
+      background: linear-gradient(135deg, #dcedc8, #b3e5fc, #fff9c4);
+      background-size: 400% 400%;
+      animation: bgAnimation 20s ease infinite;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-        header {
-            background: linear-gradient(to right, #2e7d32, #66bb6a);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+    @keyframes bgAnimation {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
 
-        header h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
+    header {
+      background: linear-gradient(to right, #2e7d32, #66bb6a);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-        header p.lead {
-            font-size: 1.5rem;
-        }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
 
-        main {
-            padding: 40px 20px;
-            min-height: 70vh; /* Garante altura mínima */
-        }
+    header p.lead {
+      font-size: 1.5rem;
+    }
 
-        .btn-custom {
-            min-width: 150px;
-            color: white;
-            border: none;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-        }
+    main {
+      padding: 40px 20px;
+      min-height: 70vh;
+    }
 
-        .btn-geografia {
-            background: linear-gradient(to right, #1976d2, #64b5f6);
-        }
+    .btn-custom {
+      min-width: 150px;
+      border: none;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      color: white;
+    }
 
-        .btn-agricultura {
-            background: linear-gradient(to right, #43a047, #a5d6a7);
-        }
+    .btn-geografia {
+      background: linear-gradient(to right, #1976d2, #64b5f6);
+    }
 
-        .btn-cultura {
-            background: linear-gradient(to right, #fbc02d, #fff176);
-            color: #333;
-        }
+    .btn-geografia:hover {
+      opacity: 0.9;
+    }
 
-        .btn-economia {
-            background: linear-gradient(to right, #00acc1, #80deea);
-        }
+    .btn-agricultura {
+      background: linear-gradient(to right, #43a047, #a5d6a7);
+    }
 
-        .card-info {
-            margin-top: 40px;
-        }
+    .btn-agricultura:hover {
+      opacity: 0.9;
+    }
 
-        footer {
-            background: linear-gradient(to right, #263238, #37474f);
-            color: white;
-            text-align: center;
-            padding: 20px 10px;
-            margin-top: 100px; /* Distância aumentada */
-        }
-    </style>
+    .btn-economia {
+      background: linear-gradient(to right, #00acc1, #80deea);
+    }
+
+    .btn-economia:hover {
+      opacity: 0.9;
+    }
+
+    .btn-cultura {
+      background: linear-gradient(to right, #fbc02d, #fff176);
+    }
+
+    @keyframes piscar-texto-preto {
+      0%, 100% {
+        color: white;
+      }
+      50% {
+        color: black;
+      }
+    }
+
+    .btn-cultura:hover {
+      background: linear-gradient(to right, #f9a825, #fdd835);
+      animation: piscar-texto-preto 1s infinite alternate;
+      text-decoration: none;
+    }
+
+    .card-info {
+      margin-top: 40px;
+    }
+
+    footer {
+      background: linear-gradient(to right, #263238, #37474f);
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 100px;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <h1>Nosso Tema é Mato Grosso</h1>
-        <p class="lead">Potência do Brasil e do Centro-Oeste</p>
-    </header>
+  <header>
+    <h1>Mato Grosso: Riqueza Natural, Cultural e Econômica</h1>
+    <p class="lead">Um estado estratégico para o crescimento sustentável do Brasil</p>
+  </header>
 
-    <!-- Conteúdo principal -->
-    <main class="container text-center">
-        <!-- Botões -->
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-            <button class="btn btn-custom btn-geografia">
-                <i class="fas fa-globe-americas"></i> Geografia
-            </button>
-            <button class="btn btn-custom btn-agricultura">
-                <i class="fas fa-seedling"></i> Agricultura
-            </button>
-            <button class="btn btn-custom btn-cultura">
-                <i class="fas fa-landmark"></i> Cultura
-            </button>
-            <button class="btn btn-custom btn-economia">
-                <i class="fas fa-chart-line"></i> Economia
-            </button>
+  <main class="container text-center">
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <a href="#geografia" class="btn btn-custom btn-geografia">
+        <i class="fas fa-globe-americas"></i> Geografia
+      </a>
+      <a href="#agricultura" class="btn btn-custom btn-agricultura">
+        <i class="fas fa-seedling"></i> Agricultura
+      </a>
+      <a href="#cultura" class="btn btn-custom btn-cultura">
+        <i class="fas fa-landmark"></i> Cultura
+      </a>
+      <a href="#economia" class="btn btn-custom btn-economia">
+        <i class="fas fa-chart-line"></i> Economia
+      </a>
+    </div>
+
+    <div class="row card-info">
+      <!-- Geografia -->
+      <div class="col-md-6 mb-4" id="geografia">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Geografia de Mato Grosso</h5>
+            <p class="card-text">
+              Localizado na região Centro-Oeste, Mato Grosso é o terceiro maior estado brasileiro em área territorial. Abriga três importantes biomas: Cerrado, Pantanal e Amazônia, com relevância ecológica e ambiental estratégica.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <!-- Cards informativos -->
-        <div class="row card-info">
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Geografia de Mato Grosso</h5>
-                        <p class="card-text">Localizado no Centro-Oeste, é o terceiro maior estado do Brasil em extensão territorial, com vastos biomas como o Cerrado, Pantanal e a Amazônia.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Economia e Agricultura</h5>
-                        <p class="card-text">Principal produtor nacional de grãos, especialmente soja e milho. Mato Grosso é um dos pilares do agronegócio brasileiro.</p>
-                    </div>
-                </div>
-            </div>
+      <!-- Agricultura -->
+      <div class="col-md-6 mb-4" id="agricultura">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Agricultura e Pecuária</h5>
+            <p class="card-text">
+              Mato Grosso lidera a produção nacional de grãos como soja e milho, sendo um dos maiores exportadores do agronegócio. O estado também se destaca na pecuária, com um dos maiores rebanhos bovinos do país.
+            </p>
+          </div>
         </div>
-    </main>
+      </div>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>© 2025 Começando tudo do início | Desenvolvido com 💚 por estudantes do Brasil</p>
-    </footer>
+      <!-- Cultura -->
+      <div class="col-md-6 mb-4" id="cultura">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Cultura de Mato Grosso</h5>
+            <p class="card-text">
+              A cultura mato-grossense é marcada por uma diversidade única, resultado da influência indígena, sertaneja e pantaneira. Expressa-se por meio de manifestações populares, gastronomia regional e rico artesanato tradicional.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Economia -->
+      <div class="col-md-6 mb-4" id="economia">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Economia de Mato Grosso</h5>
+            <p class="card-text">
+              Com uma economia fortemente orientada para o agronegócio, Mato Grosso é um dos principais polos de exportação de commodities agrícolas do Brasil. O estado impulsiona o desenvolvimento nacional com produção em larga escala e alta produtividade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 - Projeto Educacional sobre Mato Grosso | Criado com dedicação por estudantes brasileiros</p>
+  </footer>
 </body>
 </html>
